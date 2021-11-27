@@ -36,7 +36,7 @@ export default function App() {
     data.sort((a, b) => b.price - a.price);
     setData([...data]);
   };
-  const Time = () => {
+  const productTime = () => {
     data.sort((a, b) => b.date - a.date);
     setData([...data]);
   };
@@ -46,7 +46,7 @@ export default function App() {
       <Buttons
         increasedPrice={sortİncreasedPrice}
         decreasingPrice={sortDecreasingPrice}
-        time={Time}
+        time={productTime}
       />
       <FlatList
         ItemSeparatorComponent={productSeperator}
